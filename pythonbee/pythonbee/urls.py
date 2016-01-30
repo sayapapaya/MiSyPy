@@ -16,9 +16,20 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 from pythonbee_app import views
+from django.conf.urls.static import static
+from pythonbee import settings
 
 urlpatterns = [
     #url(r'^pythonbee_app/',include('pythonbee_app.urls')),
     url(r'^$', views.index, name='index'),
     url(r'^admin/', admin.site.urls),
-]
+
+] + static(settings.STATIC_URL, document_root=settings.STATIC_DIR)
+
+
+"""urlpatterns += patterns(
+    'django.views.static',
+    (r'static/(?P<path>.*)',
+        'serve',
+        {'document_root': settings.STATIC_DIR}), ) """
+

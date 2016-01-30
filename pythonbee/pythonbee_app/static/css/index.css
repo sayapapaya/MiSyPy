@@ -1,0 +1,32 @@
+.title-block {
+	background-color: FF6633;
+	height: 25%;
+	width: 100%;
+	margin: none;
+}
+
+.menu-block {
+	background-color: FF0033;
+	height: 100%;
+	width: 20%;
+	margin: none;
+
+}
+
+.game-div {
+	left: 20%;
+	top: 25%;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	margin: auto;
+}
+
+body{
+	background-color: FFCC00;
+
+}
+
+h1{
+	text-align: center;
+}
