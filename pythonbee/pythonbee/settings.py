@@ -14,7 +14,6 @@ import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-#BASE_DIR = "C:\Users\Saya\Documents\MiSyPy\MiSyPy\pythonbee"
 
 
 # Quick-start development settings - unsuitable for production
@@ -56,7 +55,7 @@ ROOT_URLCONF = 'pythonbee.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ["C:/Users/Saya/Documents/MiSyPy/MiSyPy/pythonbee/pythonbee_app/templates/",],
+        'DIRS': [os.path.join(BASE_DIR, 'pythonbee_app', 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
